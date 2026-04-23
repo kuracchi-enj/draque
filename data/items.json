@@ -1,0 +1,8 @@
+[
+  { "id": "yakusou",        "name": "薬草",           "type": "heal_hp",  "amount": 20,  "buy":   8, "sell":   4 },
+  { "id": "jou_yakusou",    "name": "上薬草",         "type": "heal_hp",  "amount": 60,  "buy":  30, "sell":  15 },
+  { "id": "mahou_seisui",   "name": "魔法の聖水",     "type": "heal_mp",  "amount": 20,  "buy":  50, "sell":  25 },
+  { "id": "whey_protein",   "name": "ホエイプロテイン", "type": "buff_atk", "amount": 10,  "buy": 100, "sell":  50 },
+  { "id": "soy_protein",    "name": "ソイプロテイン",   "type": "buff_atk", "amount":  3,  "buy":  30, "sell":  15 },
+  { "id": "kidzuke_gusuri", "name": "気付け薬",       "type": "buff_def", "amount":  8,  "buy":  60, "sell":  30 }
+]

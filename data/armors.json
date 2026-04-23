@@ -1,0 +1,140 @@
+{
+  "head": [
+    {
+      "id": "leather_hat",
+      "name": "皮の帽子",
+      "slot": "head",
+      "armor_type": "軽装",
+      "def_bonus": 2,
+      "buy": 20,
+      "sell": 10,
+      "allowed_jobs": ["剣士", "僧侶", "魔法使い", "忍者", "重戦士"],
+      "area": "A"
+    },
+    {
+      "id": "iron_helm",
+      "name": "鉄のヘルム",
+      "slot": "head",
+      "armor_type": "重装",
+      "def_bonus": 8,
+      "buy": 150,
+      "sell": 75,
+      "allowed_jobs": ["剣士", "重戦士"],
+      "area": "B"
+    },
+    {
+      "id": "magic_turban",
+      "name": "魔法のターバン",
+      "slot": "head",
+      "armor_type": "軽装",
+      "def_bonus": 5,
+      "buy": 200,
+      "sell": 100,
+      "allowed_jobs": ["僧侶", "魔法使い", "忍者"],
+      "area": "B"
+    },
+    {
+      "id": "light_crown",
+      "name": "光の冠",
+      "slot": "head",
+      "armor_type": "中装",
+      "def_bonus": 15,
+      "buy": 2000,
+      "sell": 1000,
+      "allowed_jobs": ["剣士", "僧侶", "忍者"],
+      "area": "C"
+    }
+  ],
+  "body": [
+    {
+      "id": "leather_armor",
+      "name": "皮のよろい",
+      "slot": "body",
+      "armor_type": "軽装",
+      "def_bonus": 4,
+      "buy": 30,
+      "sell": 15,
+      "allowed_jobs": ["剣士", "僧侶", "魔法使い", "忍者", "重戦士"],
+      "area": "A"
+    },
+    {
+      "id": "chain_mail",
+      "name": "鎖かたびら",
+      "slot": "body",
+      "armor_type": "中装",
+      "def_bonus": 10,
+      "buy": 180,
+      "sell": 90,
+      "allowed_jobs": ["剣士", "僧侶", "忍者", "重戦士"],
+      "area": "B"
+    },
+    {
+      "id": "steel_armor",
+      "name": "鋼のよろい",
+      "slot": "body",
+      "armor_type": "重装",
+      "def_bonus": 18,
+      "buy": 600,
+      "sell": 300,
+      "allowed_jobs": ["剣士", "重戦士"],
+      "area": "B"
+    },
+    {
+      "id": "royal_armor",
+      "name": "ロイヤルアーマー",
+      "slot": "body",
+      "armor_type": "重装",
+      "def_bonus": 28,
+      "buy": 3000,
+      "sell": 1500,
+      "allowed_jobs": ["剣士", "重戦士"],
+      "area": "C"
+    }
+  ],
+  "legs": [
+    {
+      "id": "leather_pants",
+      "name": "皮のズボン",
+      "slot": "legs",
+      "armor_type": "軽装",
+      "def_bonus": 2,
+      "buy": 15,
+      "sell": 7,
+      "allowed_jobs": ["剣士", "僧侶", "魔法使い", "忍者", "重戦士"],
+      "area": "A"
+    },
+    {
+      "id": "iron_greave",
+      "name": "鉄のグリーブ",
+      "slot": "legs",
+      "armor_type": "重装",
+      "def_bonus": 7,
+      "buy": 120,
+      "sell": 60,
+      "allowed_jobs": ["剣士", "重戦士"],
+      "area": "B"
+    },
+    {
+      "id": "magic_pants",
+      "name": "魔法のパンツ",
+      "slot": "legs",
+      "armor_type": "軽装",
+      "def_bonus": 5,
+      "buy": 250,
+      "sell": 125,
+      "allowed_jobs": ["魔法使い", "忍者"],
+      "area": "B"
+    },
+    {
+      "id": "holy_boots",
+      "name": "聖なるブーツ",
+      "slot": "legs",
+      "armor_type": "中装",
+      "def_bonus": 12,
+      "buy": 1800,
+      "sell": 900,
+      "allowed_jobs": ["剣士", "僧侶", "忍者", "重戦士"],
+      "area": "C"
+    }
+  ]
+}

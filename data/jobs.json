@@ -1,0 +1,72 @@
+{
+  "剣士": {
+    "description": "バランスの取れた万能型。どんな状況にも対応できる。",
+    "can_cast": false,
+    "allowed_weapons": ["棒", "剣"],
+    "allowed_armor_types": ["軽装", "中装", "重装"],
+    "stats": {
+      "1":  { "hp": 10,  "mp":   5, "atk":  1, "def":  1, "agi":  1 },
+      "10": { "hp": 20,  "mp":  15, "atk":  5, "def":  5, "agi":  5 },
+      "20": { "hp": 30,  "mp":  25, "atk": 10, "def": 10, "agi": 10 },
+      "50": { "hp": 60,  "mp":  55, "atk": 25, "def": 25, "agi": 25 },
+      "80": { "hp": 90,  "mp":  85, "atk": 40, "def": 40, "agi": 40 },
+      "99": { "hp": 110, "mp": 100, "atk": 50, "def": 50, "agi": 50 }
+    }
+  },
+  "僧侶": {
+    "description": "回復と防御が得意。パーティの要。",
+    "can_cast": true,
+    "allowed_weapons": ["棒", "杖"],
+    "allowed_armor_types": ["軽装", "中装"],
+    "stats": {
+      "1":  { "hp":  9,  "mp":   7, "atk":  1, "def":  1, "agi":  0 },
+      "10": { "hp": 18,  "mp":  22, "atk":  4, "def":  6, "agi":  4 },
+      "20": { "hp": 27,  "mp":  35, "atk":  7, "def": 11, "agi":  9 },
+      "50": { "hp": 55,  "mp":  73, "atk": 18, "def": 28, "agi": 21 },
+      "80": { "hp": 82,  "mp": 108, "atk": 29, "def": 43, "agi": 33 },
+      "99": { "hp": 100, "mp": 130, "atk": 35, "def": 50, "agi": 45 }
+    }
+  },
+  "魔法使い": {
+    "description": "強力な攻撃呪文を操る。HPと防御は低い。",
+    "can_cast": true,
+    "allowed_weapons": ["棒", "ロッド"],
+    "allowed_armor_types": ["軽装"],
+    "stats": {
+      "1":  { "hp":  7,  "mp":   8, "atk":  1, "def":  0, "agi":  2 },
+      "10": { "hp": 14,  "mp":  25, "atk":  4, "def":  3, "agi":  6 },
+      "20": { "hp": 21,  "mp":  40, "atk":  6, "def":  6, "agi": 12 },
+      "50": { "hp": 45,  "mp":  85, "atk": 16, "def": 16, "agi": 28 },
+      "80": { "hp": 68,  "mp": 126, "atk": 25, "def": 25, "agi": 46 },
+      "99": { "hp": 80,  "mp": 150, "atk": 30, "def": 40, "agi": 60 }
+    }
+  },
+  "忍者": {
+    "description": "素早さが圧倒的。先手を取って高火力を叩き込む。",
+    "can_cast": false,
+    "allowed_weapons": ["棒", "忍者刀", "剣"],
+    "allowed_armor_types": ["軽装"],
+    "stats": {
+      "1":  { "hp":  8,  "mp":   3, "atk":  2, "def":  0, "agi":  5 },
+      "10": { "hp": 17,  "mp":  10, "atk":  7, "def":  3, "agi": 13 },
+      "20": { "hp": 25,  "mp":  16, "atk": 12, "def":  6, "agi": 21 },
+      "50": { "hp": 52,  "mp":  35, "atk": 30, "def": 13, "agi": 50 },
+      "80": { "hp": 78,  "mp":  57, "atk": 50, "def": 21, "agi": 79 },
+      "99": { "hp": 95,  "mp":  70, "atk": 65, "def": 30, "agi": 100 }
+    }
+  },
+  "重戦士": {
+    "description": "圧倒的なHPと攻撃力を誇る力技型。素早さは低い。",
+    "can_cast": false,
+    "allowed_weapons": ["棒", "剣"],
+    "allowed_armor_types": ["軽装", "中装", "重装"],
+    "stats": {
+      "1":  { "hp": 12,  "mp":   1, "atk":  3, "def":  1, "agi":  1 },
+      "10": { "hp": 24,  "mp":   5, "atk": 10, "def":  7, "agi":  4 },
+      "20": { "hp": 36,  "mp":   9, "atk": 18, "def": 12, "agi":  5 },
+      "50": { "hp": 78,  "mp":  18, "atk": 40, "def": 32, "agi": 12 },
+      "80": { "hp": 117, "mp":  32, "atk": 58, "def": 52, "agi": 16 },
+      "99": { "hp": 140, "mp":  50, "atk": 70, "def": 80, "agi": 20 }
+    }
+  }
+}

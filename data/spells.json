@@ -1,0 +1,26 @@
+{
+  "僧侶": [
+    { "id": "hoimi",    "name": "ホイミ",   "learn_lv":  1, "mp":  8, "effect": "heal_hp",      "amount": 30, "desc": "HPを30回復する" },
+    { "id": "rarihoo",  "name": "ラリホー", "learn_lv":  6, "mp":  5, "effect": "sleep",         "turns": 3,  "desc": "敵を眠らせる" },
+    { "id": "sukuruto", "name": "スクルト", "learn_lv": 12, "mp":  6, "effect": "buff_def",                   "desc": "防御力を高める" },
+    { "id": "behoimi",  "name": "ベホイミ", "learn_lv": 15, "mp": 15, "effect": "heal_hp",      "amount": 80, "desc": "HPを80回復する" },
+    { "id": "zaki",     "name": "ザキ",     "learn_lv": 20, "mp": 15, "effect": "instant_death", "rate": 0.15, "desc": "敵を即死させる（確率15%）" },
+    { "id": "behoma",   "name": "ベホマ",   "learn_lv": 40, "mp": 30, "effect": "heal_hp_full",              "desc": "HPを完全に回復する" }
+  ],
+  "魔法使い": [
+    { "id": "mera",      "name": "メラ",     "learn_lv":  1, "mp":  4, "effect": "damage_single",  "element": "fire",    "min":  8, "max":  14, "desc": "炎で敵を攻撃する" },
+    { "id": "manuusa",   "name": "マヌーサ", "learn_lv":  8, "mp":  5, "effect": "blind",          "turns": 3,           "desc": "敵の命中率を下げる" },
+    { "id": "gira",      "name": "ギラ",     "learn_lv":  8, "mp":  8, "effect": "damage_single",  "element": "fire",    "min": 18, "max":  30, "desc": "強い炎で敵を攻撃する" },
+    { "id": "rura",      "name": "ルーラ",   "learn_lv": 10, "mp":  8, "effect": "warp",                                 "desc": "訪れた街に飛ぶ（フィールドのみ）" },
+    { "id": "rukani",    "name": "ルカニ",   "learn_lv": 12, "mp":  5, "effect": "debuff_def",     "rate": 0.5,          "desc": "敵の防御力を下げる" },
+    { "id": "rerimito",  "name": "リレミト", "learn_lv": 12, "mp":  6, "effect": "escape_dungeon",               "desc": "ダンジョンから脱出する（ダンジョンのみ）" },
+    { "id": "baikuruto", "name": "バイキルト","learn_lv": 15, "mp":  8, "effect": "buff_atk",                           "desc": "自分の攻撃力を上げる" },
+    { "id": "mahotoon",  "name": "マホトーン","learn_lv": 18, "mp":  5, "effect": "silence",        "turns": 3,          "desc": "敵の呪文を封じる" },
+    { "id": "io",        "name": "イオ",     "learn_lv": 20, "mp": 16, "effect": "damage_single",  "element": "blast",   "min": 40, "max":  60, "desc": "爆発で敵に大ダメージ" },
+    { "id": "hyado",     "name": "ヒャド",   "learn_lv": 25, "mp": 10, "effect": "damage_single",  "element": "ice",     "min": 30, "max":  45, "desc": "氷の呪文で敵を攻撃する" },
+    { "id": "bagi",      "name": "バギ",     "learn_lv": 30, "mp": 10, "effect": "damage_single",  "element": "wind",    "min": 35, "max":  50, "desc": "風の刃で敵を攻撃する" },
+    { "id": "begirama",  "name": "ベギラマ", "learn_lv": 35, "mp": 12, "effect": "damage_all",     "element": "fire",    "min": 30, "max":  45, "desc": "高熱の炎で全体を攻撃する" },
+    { "id": "ionazun",   "name": "イオナズン","learn_lv": 40, "mp": 20, "effect": "damage_all",     "element": "blast",   "min": 70, "max": 100, "desc": "大爆発で全体に大ダメージ" },
+    { "id": "dein",      "name": "デイン",   "learn_lv": 45, "mp": 18, "effect": "damage_single",  "element": "thunder", "min": 80, "max": 120, "desc": "雷の呪文で敵に大ダメージ" }
+  ]
+}

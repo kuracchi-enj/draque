@@ -1,0 +1,65 @@
+{
+  "name": "くらっち",
+  "job_name": "重戦士",
+  "level": 1,
+  "exp": 0,
+  "gold": 50,
+  "hp": 12,
+  "mp": 1,
+  "current_area": "A",
+  "position": [
+    5,
+    7
+  ],
+  "defeated_bosses": [
+
+  ],
+  "inventory": {
+    "items": {
+      "yakusou": 1
+    },
+    "weapon": null,
+    "head": null,
+    "body": null,
+    "legs": null
+  },
+  "status_effects": {
+  },
+  "treasures": {
+    "A": [
+      {
+        "pos": [
+          6,
+          15
+        ],
+        "loot": {
+          "kind": "item",
+          "id": "yakusou"
+        },
+        "opened": false
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "loot": {
+          "kind": "gold",
+          "amount": 45
+        },
+        "opened": false
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "loot": {
+          "kind": "item",
+          "id": "yakusou"
+        },
+        "opened": true
+      }
+    ]
+  }
+}

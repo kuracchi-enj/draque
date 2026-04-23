@@ -1,0 +1,273 @@
+{
+  "A": {
+    "normal": [
+      {
+        "name": "スライム",
+        "hp": 8, "mp": 0, "atk": 3, "def": 1, "agi": 2,
+        "exp": 3, "gold": 3,
+        "elements": { "fire": 1.5 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "yakusou", "rate": 0.20 }
+        ]
+      },
+      {
+        "name": "スライムベス",
+        "hp": 12, "mp": 0, "atk": 4, "def": 2, "agi": 3,
+        "exp": 5, "gold": 5,
+        "elements": { "fire": 1.5 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "yakusou", "rate": 0.15 }
+        ]
+      },
+      {
+        "name": "洞窟コウモリ",
+        "hp": 10, "mp": 0, "atk": 4, "def": 1, "agi": 5,
+        "exp": 5, "gold": 5,
+        "elements": {},
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": ["manuusa"],
+        "drops": [
+          { "item_type": "item", "item_id": "yakusou", "rate": 0.10 }
+        ]
+      },
+      {
+        "name": "ゴブリン",
+        "hp": 15, "mp": 0, "atk": 5, "def": 2, "agi": 4,
+        "exp": 6, "gold": 8,
+        "elements": {},
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "weapon", "item_id": "hinoki_stick", "rate": 0.05 },
+          { "item_type": "item",   "item_id": "yakusou",      "rate": 0.15 }
+        ]
+      },
+      {
+        "name": "おばけキノコ",
+        "hp": 18, "mp": 8, "atk": 4, "def": 2, "agi": 2,
+        "exp": 7, "gold": 9,
+        "elements": { "fire": 1.5, "ice": 0.5 },
+        "status_resist": {},
+        "spells": [
+          { "name": "胞子", "effect": "sleep", "turns": 2, "mp": 4 }
+        ],
+        "status_attacks": ["poison"],
+        "drops": [
+          { "item_type": "item", "item_id": "yakusou", "rate": 0.20 }
+        ]
+      },
+      {
+        "name": "ドラキー",
+        "hp": 14, "mp": 0, "atk": 6, "def": 2, "agi": 6,
+        "exp": 8, "gold": 10,
+        "elements": { "thunder": 1.5 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "yakusou", "rate": 0.10 }
+        ]
+      }
+    ],
+    "boss": {
+      "name": "ゴブリンキング",
+      "hp": 80, "mp": 12, "atk": 10, "def": 5, "agi": 6,
+      "exp": 50, "gold": 100,
+      "elements": {},
+      "status_resist": { "sleep": 1.0, "paralysis": 1.0, "instant_death": 1.0 },
+      "spells": [
+        { "name": "マヌーサ", "effect": "blind", "turns": 3, "mp": 5 }
+      ],
+      "status_attacks": [],
+      "drops": []
+    }
+  },
+  "B": {
+    "normal": [
+      {
+        "name": "オークソルジャー",
+        "hp": 35, "mp": 0, "atk": 14, "def": 7, "agi": 5,
+        "exp": 18, "gold": 20,
+        "elements": {},
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item",  "item_id": "jou_yakusou",  "rate": 0.10 },
+          { "item_type": "armor", "item_id": "leather_armor", "rate": 0.03 }
+        ]
+      },
+      {
+        "name": "ダークウィザード",
+        "hp": 28, "mp": 30, "atk": 10, "def": 4, "agi": 9,
+        "exp": 22, "gold": 25,
+        "elements": { "fire": 0.5 },
+        "status_resist": { "silence": 0.5 },
+        "spells": [
+          { "name": "メラ",   "effect": "damage_single", "element": "fire", "min": 8,  "max": 14, "mp": 4 },
+          { "name": "ラリホー","effect": "sleep",         "turns": 3,                             "mp": 5 }
+        ],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "mahou_seisui", "rate": 0.15 }
+        ]
+      },
+      {
+        "name": "サイクロプス",
+        "hp": 55, "mp": 0, "atk": 20, "def": 10, "agi": 3,
+        "exp": 30, "gold": 35,
+        "elements": { "ice": 1.5 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": ["paralysis"],
+        "drops": [
+          { "item_type": "item",   "item_id": "soy_protein", "rate": 0.08 },
+          { "item_type": "weapon", "item_id": "dou_sword",   "rate": 0.04 }
+        ]
+      },
+      {
+        "name": "ストーンゴーレム",
+        "hp": 60, "mp": 0, "atk": 18, "def": 15, "agi": 2,
+        "exp": 28, "gold": 30,
+        "elements": { "thunder": 1.5, "fire": 0.5 },
+        "status_resist": { "sleep": 1.0, "paralysis": 1.0, "poison": 1.0 },
+        "spells": [],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "jou_yakusou", "rate": 0.12 }
+        ]
+      },
+      {
+        "name": "ゾンビ",
+        "hp": 40, "mp": 0, "atk": 15, "def": 6, "agi": 4,
+        "exp": 20, "gold": 22,
+        "elements": { "fire": 1.5 },
+        "status_resist": { "poison": 1.0, "sleep": 0.5 },
+        "spells": [],
+        "status_attacks": ["poison"],
+        "drops": [
+          { "item_type": "item", "item_id": "kidzuke_gusuri", "rate": 0.10 }
+        ]
+      },
+      {
+        "name": "ハーピィ",
+        "hp": 32, "mp": 0, "atk": 16, "def": 5, "agi": 12,
+        "exp": 25, "gold": 28,
+        "elements": {},
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": ["sleep"],
+        "drops": [
+          { "item_type": "item", "item_id": "jou_yakusou", "rate": 0.08 }
+        ]
+      }
+    ],
+    "boss": {
+      "name": "ドラゴン",
+      "hp": 250, "mp": 30, "atk": 35, "def": 18, "agi": 12,
+      "exp": 200, "gold": 300,
+      "elements": { "fire": 0.0, "ice": 1.5 },
+      "status_resist": { "sleep": 1.0, "paralysis": 1.0, "instant_death": 1.0, "manuusa": 0.5 },
+      "spells": [
+        { "name": "炎のブレス", "effect": "damage_all", "element": "fire", "min": 20, "max": 35, "mp": 10 }
+      ],
+      "status_attacks": ["poison"],
+      "drops": []
+    }
+  },
+  "C": {
+    "normal": [
+      {
+        "name": "デーモンナイト",
+        "hp": 80, "mp": 0, "atk": 38, "def": 20, "agi": 14,
+        "exp": 60, "gold": 70,
+        "elements": { "fire": 0.5 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": ["poison"],
+        "drops": [
+          { "item_type": "item",  "item_id": "whey_protein", "rate": 0.08 },
+          { "item_type": "armor", "item_id": "chain_mail",   "rate": 0.03 }
+        ]
+      },
+      {
+        "name": "アンデッド騎士",
+        "hp": 90, "mp": 0, "atk": 42, "def": 25, "agi": 8,
+        "exp": 70, "gold": 80,
+        "elements": { "fire": 1.5, "ice": 0.0 },
+        "status_resist": { "poison": 1.0, "sleep": 0.5 },
+        "spells": [],
+        "status_attacks": ["paralysis"],
+        "drops": [
+          { "item_type": "item",  "item_id": "jou_yakusou", "rate": 0.12 },
+          { "item_type": "armor", "item_id": "iron_greave", "rate": 0.04 }
+        ]
+      },
+      {
+        "name": "悪魔将軍",
+        "hp": 110, "mp": 30, "atk": 50, "def": 30, "agi": 18,
+        "exp": 90, "gold": 100,
+        "elements": { "thunder": 0.5 },
+        "status_resist": { "sleep": 0.8, "manuusa": 0.5 },
+        "spells": [
+          { "name": "ルカニ",   "effect": "debuff_def", "rate": 0.5,         "mp": 5 },
+          { "name": "マヌーサ", "effect": "blind",      "turns": 3,          "mp": 5 },
+          { "name": "ギラ",     "effect": "damage_single", "element": "fire", "min": 18, "max": 30, "mp": 8 }
+        ],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item",   "item_id": "kidzuke_gusuri", "rate": 0.10 },
+          { "item_type": "weapon", "item_id": "steel_sword",    "rate": 0.03 }
+        ]
+      },
+      {
+        "name": "シャドウビースト",
+        "hp": 95, "mp": 0, "atk": 45, "def": 22, "agi": 20,
+        "exp": 80, "gold": 90,
+        "elements": { "fire": 1.5, "dark": 0.0 },
+        "status_resist": {},
+        "spells": [],
+        "status_attacks": ["sleep", "poison"],
+        "drops": [
+          { "item_type": "item", "item_id": "whey_protein", "rate": 0.10 }
+        ]
+      },
+      {
+        "name": "ダークドラゴン",
+        "hp": 130, "mp": 20, "atk": 55, "def": 28, "agi": 16,
+        "exp": 100, "gold": 110,
+        "elements": { "ice": 1.5, "fire": 0.0 },
+        "status_resist": { "paralysis": 0.5, "instant_death": 1.0 },
+        "spells": [
+          { "name": "炎のブレス", "effect": "damage_all", "element": "fire", "min": 25, "max": 40, "mp": 10 }
+        ],
+        "status_attacks": [],
+        "drops": [
+          { "item_type": "item", "item_id": "whey_protein", "rate": 0.08 }
+        ]
+      }
+    ],
+    "boss": {
+      "name": "魔王バルドラス",
+      "hp": 600, "mp": 80, "atk": 70, "def": 40, "agi": 25,
+      "exp": 0, "gold": 0,
+      "elements": { "fire": 0.5, "ice": 0.5, "blast": 0.5, "thunder": 0.5 },
+      "status_resist": { "sleep": 1.0, "paralysis": 1.0, "instant_death": 1.0, "poison": 1.0, "manuusa": 1.0, "mahotoon": 1.0 },
+      "spells": [
+        { "name": "暗黒の炎",   "effect": "damage_all",    "element": "dark",    "min": 40, "max": 60, "mp": 15 },
+        { "name": "イオナズン", "effect": "damage_all",    "element": "blast",   "min": 60, "max": 80, "mp": 20 },
+        { "name": "マホトーン", "effect": "silence",       "turns": 3,                                "mp":  5 }
+      ],
+      "status_attacks": ["poison"],
+      "drops": []
+    }
+  }
+}
