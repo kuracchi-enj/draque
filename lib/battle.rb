@@ -250,7 +250,7 @@ class Battle
     puts "  5. にげる" unless @is_boss
     print "  > "
 
-    case gets.chomp.strip
+    case gets.chomp.strip.downcase
     when '1' then player_attack
     when '2'
       if can_spell
@@ -262,7 +262,7 @@ class Battle
       end
     when '3' then player_item
     when '4' then player_guard
-    when '5'
+    when '5', 'break', 'escape'
       if @is_boss
         log("ボスからは逃げられない！"); redraw; Renderer.wait(0.8); nil
       else

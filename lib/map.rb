@@ -33,12 +33,12 @@ class Map
       new_pos = move(pos, input)
 
       case input
-      when 'm', 'M'
+      when 'm', 'menu'
         field_menu(area)
         area = Area[@player.current_area]
         pos = @player.position
         next
-      when 'q', 'Q'
+      when 'q', 'quit', 'exit'
         puts "\n  中断しますか？(y/n)"
         print "  > "
         break if gets.chomp.downcase == 'y'
@@ -166,16 +166,21 @@ class Map
   end
 
   def read_key
-    STDIN.getch rescue gets.chomp
+    first = STDIN.getch rescue (return gets.chomp.strip.downcase)
+    return first.downcase if %w[w a s d].include?(first.downcase)
+    print first
+    rest = gets
+    return '' if rest.nil?
+    (first + rest).chomp.strip.downcase
   end
 
   def move(pos, input)
     x, y = pos
     case input
-    when 'w', 'W' then [x, y - 1]
-    when 's', 'S' then [x, y + 1]
-    when 'a', 'A' then [x - 1, y]
-    when 'd', 'D' then [x + 1, y]
+    when 'w' then [x, y - 1]
+    when 's' then [x, y + 1]
+    when 'a' then [x - 1, y]
+    when 'd' then [x + 1, y]
     end
   end
 
@@ -194,11 +199,11 @@ class Map
       puts "  3. アイテムを使う"
       puts "  4. 閉じる"
       print "  > "
-      case gets.chomp.strip
+      case gets.chomp.strip.downcase
       when '1' then show_status
       when '2' then show_equipment
       when '3' then use_item_menu
-      when '4' then break
+      when '4', 'exit', 'quit' then break
       end
     end
   end

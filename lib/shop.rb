@@ -47,10 +47,10 @@ class Shop
       puts "  2. 装備を外す"
       puts "  3. 出る"
       print "  > "
-      case gets.chomp.strip
+      case gets.chomp.strip.downcase
       when '1' then buy_weapons
       when '2' then unequip_menu
-      when '3' then break
+      when '3', 'exit', 'quit' then break
       end
     end
   end
@@ -65,10 +65,10 @@ class Shop
       puts "  2. 装備を外す"
       puts "  3. 出る"
       print "  > "
-      case gets.chomp.strip
+      case gets.chomp.strip.downcase
       when '1' then buy_armors
       when '2' then unequip_menu
-      when '3' then break
+      when '3', 'exit', 'quit' then break
       end
     end
   end
@@ -83,10 +83,10 @@ class Shop
       puts "  2. アイテムを売る"
       puts "  3. 出る"
       print "  > "
-      case gets.chomp.strip
+      case gets.chomp.strip.downcase
       when '1' then buy_items
       when '2' then sell_items
-      when '3' then break
+      when '3', 'exit', 'quit' then break
       end
     end
   end

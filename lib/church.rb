@@ -23,10 +23,10 @@ class Church
       puts "  3. 出る"
       print "  > "
 
-      case gets.chomp.strip
-      when '1' then pray
-      when '2' then clear_status
-      when '3' then break
+      case gets.chomp.strip.downcase
+      when '1', 'pray', 'save' then pray
+      when '2', 'heal'         then clear_status
+      when '3', 'exit', 'quit' then break
       end
     end
   end

@@ -47,7 +47,7 @@ class Town
       draw(pos)
       input = read_key
 
-      break if input == 'q' || input == 'Q'
+      break if %w[q quit exit].include?(input)
 
       new_pos = move(pos, input)
       next unless new_pos
@@ -125,7 +125,12 @@ class Town
   end
 
   def read_key
-    STDIN.getch rescue gets.chomp
+    first = STDIN.getch rescue (return gets.chomp.strip.downcase)
+    return first.downcase if %w[w a s d].include?(first.downcase)
+    print first
+    rest = gets
+    return '' if rest.nil?
+    (first + rest).chomp.strip.downcase
   end
 
   def move(pos, input)

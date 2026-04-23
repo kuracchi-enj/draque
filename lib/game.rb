@@ -14,10 +14,10 @@ class Game
     puts "  3. 終了"
     print "  > "
 
-    case gets.chomp.strip
-    when '1' then new_game
-    when '2' then load_game
-    when '3' then puts "  またね！"; exit
+    case gets.chomp.strip.downcase
+    when '1', 'new'                     then new_game
+    when '2', 'load', 'require'         then load_game
+    when '3', 'exit', 'quit'            then puts "  またね！"; exit
     else start
     end
   end
@@ -141,7 +141,8 @@ class Game
     if revival_cost > 0
       puts "  教会で復活しますか？（所持金の半額 #{revival_cost}G）(y/n)"
       print "  > "
-      if gets.chomp.strip.downcase == 'y'
+      answer = gets.chomp.strip.downcase
+      if %w[y yes retry].include?(answer)
         player.spend_gold(revival_cost)
         player.hp = [player.max_hp / 4, 1].max
         player.status_effects.clear

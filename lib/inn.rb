@@ -25,12 +25,13 @@ class Inn
       print "  > "
 
       input = gets.chomp.strip.downcase
-      if input == '0'
+      case input
+      when '0', 'exit', 'quit'
         break
-      elsif input == 's'
+      when 's', 'save', 'dump'
         save_game
-      elsif input.to_i.between?(1, courses.size)
-        stay(courses[input.to_i - 1])
+      else
+        stay(courses[input.to_i - 1]) if input.to_i.between?(1, courses.size)
       end
     end
   end
